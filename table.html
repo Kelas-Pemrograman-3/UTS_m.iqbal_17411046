@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+  
+    <link rel="stylesheet" href="table.css">
+</head>
+<body>
+        <div class="container">
+            <div class="header-page"> 
+          </div>
+              <nav>
+                      <ul>
+                          <li>
+               <a href="">Home</a>
+                  </li>
+               
+                  <li>
+                       <a href="">Profil pengguna</a>
+                  </li>
+                  <li><a href="">Input Data</a>
+                </li>
+                <li><a href="">Table mahasiswa</a>
+                </li>
+               </ul>
+               </nav>
+               
+               <h1> Tabel Data Registrasi</h1>
+               
+                   
+                  <a href="form1.html">
+                     
+                      <br>
+                  </a>
+                  <br>
+                   
+                   <table>
+               <table border="1">
+                   <thead>
+                       <tr>
+               <th>Email </th>
+               <th>password </th>
+               <th>Name</th>
+               <th>Phone Number </th>
+               <th>Aksi</th>
+                       </tr>
+                   </thead> 
+               <tr>
+               <td>m.iqbal@gmail.com</td>
+               <td>123456</td>
+               <td>M.iqbal ridzjaldi</td>
+               <td>08997744398</td>
+               <td>
+                   <a href="">
+                       <button class="btnutama">edit</button>
+                   </a>
+                   <a href="">
+                        <button onclick="return hapus()" class="btndanger">delete</button>
+                    </a>
+               </td>
+               </tr>
+               <tr>
+                       <td>hivzi12@gmail.com</td>
+                       <td>iugiug999999</td>
+                       <td>Hivzi oktaviandi</td>
+                       <td>097567855666</td>
+
+               </tr>
+            
+               </table>
+                   
+        </div>
+</body>
+<script>
+    function hapus() {let konfirmasi=confirm("anda yakin?")
+if(konfirmasi){alert("Data telah dihapus")}
+else{alert("Proses dibatalkan")}
+}
+</script>
+</html>
